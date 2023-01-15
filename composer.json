@@ -1,0 +1,44 @@
+{
+    "name": "stormcode/php-domain-parser",
+    "description": "Public Suffix List based URL parsing implemented in PHP.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Kendall",
+            "homepage": "http://about.me/jeremykendall",
+            "role": "Developer"
+        },
+        {
+            "name": "Mikołaj Salamak",
+            "homepage": "https://stormcode.pl",
+            "role": "Editor"
+        }
+    ],
+    "bin": [
+        "bin/parse",
+        "bin/pdp-psl"
+    ],
+    "keywords": [
+        "Public Suffix List",
+        "domain parsing",
+        "url parsing"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-intl": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "1.2.*",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Pdp\\": "library/"
+        },
+        "files": [
+            "library/mb-parse-url.php"
+        ]
+    }
+}
